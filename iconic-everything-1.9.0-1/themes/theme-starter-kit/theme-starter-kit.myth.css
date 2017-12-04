@@ -1,0 +1,33 @@
+/* Iconic theme rules. Don't delete! */
+:root {
+  var-iconic-color-main: #000;		/* Main color goes here */
+  var-iconic-color-accent: #999;	/* Accent color goes here */
+}
+
+
+/* Hide all icons that are waiting to be injected */
+img.iconic {
+  display: none;
+}
+
+/* Make sure filled and text elements only get fills */
+.iconic-property-fill, .iconic-property-text {
+	stroke: none !important;
+}
+
+/* Make sure stroked elements only get strokes */
+.iconic-property-stroke {
+	fill: none !important;
+}
+
+/* Theme-specific rules */
+
+.iconic * {
+	fill: var(iconic-color-main);
+	stroke: var(iconic-color-main);
+}
+
+.iconic .iconic-property-accent {
+	fill: var(iconic-color-accent);
+	stroke: var(iconic-color-accent);
+}

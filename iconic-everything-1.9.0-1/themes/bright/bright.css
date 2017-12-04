@@ -1,0 +1,2200 @@
+/* Hide all icons that are waiting to be injected */
+img.iconic {
+  display: none;
+}
+
+/* Make sure filled and text elements only get fills */
+.iconic-property-fill, .iconic-property-text {
+  stroke: none !important;
+}
+
+/* Make sure stroked elements only get strokes */
+.iconic-property-stroke {
+  fill: none !important;
+}
+
+.iconic * {
+  fill: #4d4d4d;
+  stroke: #4d4d4d;
+}
+
+.iconic-account *.iconic-account-login *, .iconic-account *.iconic-account-logout * {
+  fill: #1B75BB;
+  stroke: #1B75BB;
+}
+.iconic-account *.iconic-account-login *.iconic-property-accent, .iconic-account *.iconic-account-logout *.iconic-property-accent {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+
+.iconic-action *.iconic-action-undo * {
+  fill: #DA3A35;
+  stroke: #DA3A35;
+}
+.iconic-action *.iconic-action-redo * {
+  fill: #80B23C;
+  stroke: #80B23C;
+}
+
+.iconic-align-left *,
+.iconic-align-center *,
+.iconic-align-right * {
+  fill: #4d4d4d;
+  stroke: #4d4d4d;
+}
+
+.iconic-aperture .iconic-aperture-blade-1 {
+  fill: #fcb400;
+}
+.iconic-aperture .iconic-aperture-blade-2 {
+  fill: #f16522;
+}
+.iconic-aperture .iconic-aperture-blade-3 {
+  fill: #DA3A35;
+}
+.iconic-aperture .iconic-aperture-blade-4 {
+  fill: #4A46AA;
+}
+.iconic-aperture .iconic-aperture-blade-5 {
+  fill: #2A91A8;
+}
+.iconic-aperture .iconic-aperture-blade-6 {
+  fill: #80B23C;
+}
+
+.iconic-arrow * {
+  fill: #4d4d4d;
+  stroke: #4d4d4d;
+}
+
+.iconic-arrow-thick * {
+  fill: #4d4d4d;
+  stroke: #4d4d4d;
+}
+
+.iconic-arrow-right-angle * {
+  fill: #4d4d4d;
+  stroke: #4d4d4d;
+}
+
+.iconic-arrow-right-angle-thick * {
+  fill: #4d4d4d;
+  stroke: #4d4d4d;
+}
+
+.iconic-audio .iconic-audio-center {
+  fill: #4d4d4d;
+  stroke: #4d4d4d;
+}
+.iconic-audio .iconic-audio-wave {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+.iconic-audio .iconic-audio-wave-outer {
+  fill: #5e5e5e;
+  stroke: #5e5e5e;
+}
+
+.iconic-audio-spectrum .iconic-audio-spectrum-frequency-low {
+  fill: #f16522;
+  stroke: #f16522;
+}
+.iconic-audio-spectrum .iconic-audio-spectrum-frequency-mid {
+  fill: #fcb400;
+  stroke: #fcb400;
+}
+.iconic-audio-spectrum .iconic-audio-spectrum-frequency-high {
+  fill: #80B23C;
+  stroke: #80B23C;
+}
+
+/* TODO: Move */
+.iconic-media-skip-backward * {
+  fill: #1B75BB;
+  stroke: #1B75BB;
+}
+
+.iconic-ban * {
+  fill: #DA3A35;
+  stroke: #DA3A35;
+}
+
+.iconic-basket .iconic-basket-body {
+  fill: #80B23C;
+  stroke: #80B23C;
+}
+.iconic-basket .iconic-basket-lip {
+  fill: #658c2f;
+  stroke: #658c2f;
+}
+.iconic-basket .iconic-basket-handle {
+  fill: #4d4d4d;
+  stroke: #4d4d4d;
+}
+
+.iconic-battery .iconic-battery-charge-amount {
+  fill: #80B23C;
+  stroke: #80B23C;
+}
+
+.iconic-barcode * {
+  fill: #4d4d4d;
+  stroke: #4d4d4d;
+}
+
+.iconic-bar-chart * {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+.iconic-bar-chart *.iconic-bar-chart-bar-1 {
+  fill: #80B23C;
+  stroke: #80B23C;
+}
+.iconic-bar-chart *.iconic-bar-chart-bar-2 {
+  fill: #2A91A8;
+  stroke: #2A91A8;
+}
+.iconic-bar-chart *.iconic-bar-chart-bar-3 {
+  fill: #4A46AA;
+  stroke: #4A46AA;
+}
+.iconic-bar-chart *.iconic-bar-chart-bar-4 {
+  fill: #DA3A35;
+  stroke: #DA3A35;
+}
+.iconic-bar-chart *.iconic-bar-chart-bar-5 {
+  fill: #f16522;
+  stroke: #f16522;
+}
+
+.iconic-beaker .iconic-beaker-measure-line {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+.iconic-beaker .iconic-beaker-fluid {
+  fill: #1B75BB;
+  stroke: #1B75BB;
+}
+.iconic-beaker .iconic-beaker-fluid-bubble {
+  fill: #2990e0;
+  stroke: #2990e0;
+}
+
+.iconic-bell * {
+  fill: #c99000;
+  stroke: #c99000;
+}
+.iconic-bell *.iconic-property-accent {
+  fill: #b07d00;
+  stroke: #b07d00;
+}
+
+.iconic-bitcoin-address .iconic-bitcoin-address-b {
+  fill: #e3a200;
+  stroke: #e3a200;
+}
+.iconic-bitcoin-address .iconic-bitcoin-address-strike {
+  fill: #e3a200;
+  stroke: #e3a200;
+}
+
+.iconic-bitcoin-block .iconic-bitcoin-block-b {
+  fill: #e3a200;
+  stroke: #e3a200;
+}
+.iconic-bitcoin-block .iconic-bitcoin-block-strike {
+  fill: #e3a200;
+  stroke: #e3a200;
+}
+.iconic-bitcoin-block .iconic-bitcoin-block-block {
+  fill: #b07d00;
+  stroke: #b07d00;
+}
+
+.iconic-bitcoin-transaction .iconic-bitcoin-transaction-b {
+  fill: #e3a200;
+  stroke: #e3a200;
+}
+.iconic-bitcoin-transaction .iconic-bitcoin-transaction-strike {
+  fill: #e3a200;
+  stroke: #e3a200;
+}
+.iconic-bitcoin-transaction .iconic-bitcoin-transaction-arrow-top {
+  fill: #80B23C;
+  stroke: #80B23C;
+}
+.iconic-bitcoin-transaction .iconic-bitcoin-transaction-arrow-bottom {
+  fill: #DA3A35;
+  stroke: #DA3A35;
+}
+
+.iconic-bitcoin .iconic-bitcoin-b {
+  fill: #e3a200;
+  stroke: #e3a200;
+}
+.iconic-bitcoin .iconic-bitcoin-strike {
+  fill: #e3a200;
+  stroke: #e3a200;
+}
+
+.iconic-bluetooth * {
+  fill: #1B75BB;
+  stroke: #1B75BB;
+}
+
+.iconic-bold * {
+  fill: #4d4d4d;
+  stroke: #4d4d4d;
+}
+
+.iconic-book * {
+  fill: #98845d;
+  stroke: #98845d;
+}
+
+.iconic-bookmark * {
+  fill: #DA3A35;
+  stroke: #DA3A35;
+}
+
+.iconic-box .iconic-box-lid {
+  fill: #78694a;
+  stroke: #78694a;
+}
+.iconic-box .iconic-box-shell {
+  fill: #98845d;
+  stroke: #98845d;
+}
+
+.iconic-brain * {
+  fill: #ec297b;
+  stroke: #ec297b;
+}
+
+.iconic-briefcase .iconic-briefcase-body-top {
+  fill: #78694a;
+  stroke: #78694a;
+}
+.iconic-briefcase .iconic-briefcase-body-bottom {
+  fill: #98845d;
+  stroke: #98845d;
+}
+.iconic-briefcase .iconic-briefcase-body-buckle {
+  fill: #ab862a;
+  stroke: #ab862a;
+}
+.iconic-briefcase .iconic-briefcase-handle {
+  fill: #ab862a;
+  stroke: #ab862a;
+}
+
+.iconic-british-pound * {
+  fill: #ab862a;
+  stroke: #ab862a;
+}
+
+.iconic-browser * {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+
+.iconic-browser-full-page * {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+.iconic-browser-full-page *.iconic-browser-full-page-bound {
+  fill: #1B75BB;
+  stroke: #1B75BB;
+}
+.iconic-browser-full-page *.iconic-browser-full-page-arrow {
+  fill: #1B75BB;
+  stroke: #1B75BB;
+}
+
+.iconic-browser-type .iconic-browser-type-chrome .iconic-browser-type-chrome-center {
+  fill: #1e97d2;
+  stroke: #1e97d2;
+}
+.iconic-browser-type .iconic-browser-type-chrome .iconic-browser-type-chrome-rim-top {
+  fill: #e42329;
+  stroke: #e42329;
+}
+.iconic-browser-type .iconic-browser-type-chrome .iconic-browser-type-chrome-rim-left {
+  fill: #52bb3f;
+  stroke: #52bb3f;
+}
+.iconic-browser-type .iconic-browser-type-chrome .iconic-browser-type-chrome-rim-right {
+  fill: #fcd300;
+  stroke: #fcd300;
+}
+.iconic-browser-type .iconic-browser-type-firefox .iconic-browser-type-firefox-fox {
+  fill: #d96807;
+  stroke: #d96807;
+}
+.iconic-browser-type .iconic-browser-type-firefox .iconic-browser-type-firefox-border {
+  fill: #0c265f;
+  stroke: #0c265f;
+}
+.iconic-browser-type .iconic-browser-type-internetexplorer * {
+  fill: #17b9f0;
+  stroke: #17b9f0;
+}
+.iconic-browser-type .iconic-browser-type-safari .iconic-browser-type-safari-border {
+  fill: #2563f4;
+  stroke: #2563f4;
+}
+.iconic-browser-type .iconic-browser-type-safari .iconic-browser-type-safari-needle {
+  fill: #f80800;
+  stroke: #f80800;
+}
+.iconic-browser-type .iconic-browser-type-safari .iconic-browser-type-safari-tick {
+  fill: #2563f4;
+  stroke: #2563f4;
+}
+
+.iconic-browser-viewport * {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+.iconic-browser-viewport *.iconic-browser-viewport-bound {
+  fill: #1B75BB;
+  stroke: #1B75BB;
+}
+
+.iconic-brush * {
+  fill: #c1b49a;
+  stroke: #c1b49a;
+}
+.iconic-brush *.iconic-property-accent {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+
+.iconic-bug * {
+  fill: #4d4d4d;
+  stroke: #4d4d4d;
+}
+.iconic-bug *.iconic-bug-head {
+  fill: #8f1e1a;
+  stroke: #8f1e1a;
+}
+.iconic-bug *.iconic-bug-thorax {
+  fill: #DA3A35;
+  stroke: #DA3A35;
+}
+
+.iconic-building * {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+.iconic-building *.iconic-building-facade {
+  fill: #4d4d4d;
+  stroke: #4d4d4d;
+}
+
+.iconic-bullhorn * {
+  fill: #4d4d4d;
+  stroke: #4d4d4d;
+}
+.iconic-bullhorn *.iconic-bullhorn-body {
+  fill: #4d4d4d;
+  stroke: #4d4d4d;
+}
+.iconic-bullhorn *.iconic-bullhorn-body-front-lip {
+  fill: #1B75BB;
+  stroke: #1B75BB;
+}
+.iconic-bullhorn *.iconic-bullhorn-body-back {
+  fill: #1B75BB;
+  stroke: #1B75BB;
+}
+.iconic-bullhorn *.iconic-bullhorn-handle {
+  fill: #4d4d4d;
+  stroke: #4d4d4d;
+}
+.iconic-bullhorn *.iconic-bullhorn-handle-trigger {
+  fill: #1B75BB;
+  stroke: #1B75BB;
+}
+
+.iconic-calculator * {
+  fill: #4d4d4d;
+  stroke: #4d4d4d;
+}
+
+.iconic-calendar *.iconic-calendar-top {
+  fill: #DA3A35;
+  stroke: #DA3A35;
+}
+.iconic-calendar *.iconic-calendar-body {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+
+.iconic-camera-rangefinder * {
+  fill: #4d4d4d;
+  stroke: #4d4d4d;
+}
+.iconic-camera-rangefinder *.iconic-property-accent {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+.iconic-camera-rangefinder *.iconic-camera-rangefinder-body-top {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+.iconic-camera-rangefinder *.iconic-camera-rangefinder-controls-lens-release {
+  fill: #DA3A35;
+  stroke: #DA3A35;
+}
+
+.iconic-camera-slr * {
+  fill: #4d4d4d;
+  stroke: #4d4d4d;
+}
+.iconic-camera-slr *.iconic-property-accent {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+.iconic-camera-slr *.iconic-camera-slr-body {
+  fill: #4d4d4d;
+  stroke: #4d4d4d;
+}
+.iconic-camera-slr *.iconic-camera-slr-lens-release {
+  fill: #DA3A35;
+  stroke: #DA3A35;
+}
+
+.iconic-caret * {
+  fill: #4d4d4d;
+  stroke: #4d4d4d;
+}
+
+.iconic-carriage-return * {
+  fill: #1B75BB;
+  stroke: #1B75BB;
+}
+
+.iconic-cart * {
+  fill: #4d4d4d;
+  stroke: #4d4d4d;
+}
+.iconic-cart *.iconic-cart-basket {
+  fill: #80B23C;
+  stroke: #80B23C;
+}
+
+.iconic-chat * {
+  fill: #1B75BB;
+  stroke: #1B75BB;
+}
+.iconic-chat *.iconic-property-accent {
+  fill: #2A91A8;
+  stroke: #2A91A8;
+}
+
+.iconic-check * {
+  fill: #80B23C;
+  stroke: #80B23C;
+}
+
+.iconic-check-thin * {
+  fill: #80B23C;
+  stroke: #80B23C;
+}
+
+.iconic-chevron * {
+  fill: #4d4d4d;
+  stroke: #4d4d4d;
+}
+
+.iconic-circle-check * {
+  fill: #80B23C;
+  stroke: #80B23C;
+}
+
+.iconic-circle-x * {
+  fill: #DA3A35;
+  stroke: #DA3A35;
+}
+
+.iconic-clipboard .iconic-clipboard-clip {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+.iconic-clipboard .iconic-clipboard-board {
+  fill: #c1b49a;
+  stroke: #c1b49a;
+}
+
+.iconic-clock * {
+  fill: #4d4d4d;
+  stroke: #4d4d4d;
+}
+.iconic-clock *.iconic-clock-hand {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+.iconic-clock *.iconic-clock-hand-second {
+  fill: #DA3A35;
+  stroke: #DA3A35;
+}
+
+.iconic-cloud * {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+
+.iconic-cloud-download *,
+.iconic-cloud-upload * {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+.iconic-cloud-download *.iconic-property-accent,
+.iconic-cloud-upload *.iconic-property-accent {
+  fill: #1B75BB;
+  stroke: #1B75BB;
+}
+
+.iconic-cloudy * {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+.iconic-cloudy *.iconic-property-accent {
+  fill: #fcb400;
+  stroke: #fcb400;
+}
+
+.iconic-code * {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+.iconic-code *.iconic-code-slash {
+  fill: #1B75BB;
+  stroke: #1B75BB;
+}
+
+.iconic-code * {
+  fill: #4d4d4d;
+  stroke: #4d4d4d;
+}
+
+.iconic-cog * {
+  fill: #4d4d4d;
+  stroke: #4d4d4d;
+}
+
+.iconic-cogs .iconic-cogs-cog-large {
+  fill: #4d4d4d;
+  stroke: #4d4d4d;
+}
+.iconic-cogs .iconic-cogs-cog-small {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+
+.iconic-collapse *,
+.iconic-expand * {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+.iconic-collapse *.iconic-property-accent,
+.iconic-expand *.iconic-property-accent {
+  fill: #1B75BB;
+  stroke: #1B75BB;
+}
+
+.iconic-command * {
+  fill: #4d4d4d;
+  stroke: #4d4d4d;
+}
+
+.iconic-comment-square * {
+  fill: #c99000;
+  stroke: #c99000;
+}
+
+.iconic-compass * {
+  fill: #d9b762;
+  stroke: #d9b762;
+}
+.iconic-compass *.iconic-compass-body {
+  fill-opacity: 1 !important;
+  fill: #f7efdd !important;
+}
+.iconic-compass *.iconic-compass-needle-axis {
+  fill: #4d4d4d;
+  stroke: #4d4d4d;
+}
+.iconic-compass *.iconic-compass-needle {
+  fill: #4d4d4d;
+  stroke: #4d4d4d;
+}
+.iconic-compass *.iconic-compass-direction {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+.iconic-compass *.iconic-compass-direction-north {
+  fill: #DA3A35;
+  stroke: #DA3A35;
+}
+
+.iconic-connections .iconic-connections-dot {
+  fill: #1B75BB;
+  stroke: #1B75BB;
+}
+.iconic-connections .iconic-connections-line {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+
+.iconic-contrast * {
+  fill: #4d4d4d;
+  stroke: #4d4d4d;
+}
+
+.iconic-copyleft * {
+  fill: #4d4d4d;
+  stroke: #4d4d4d;
+}
+
+.iconic-copyright * {
+  fill: #4d4d4d;
+  stroke: #4d4d4d;
+}
+
+.iconic-copywriting * {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+.iconic-copywriting *.iconic-property-accent {
+  fill: #DA3A35;
+  stroke: #DA3A35;
+}
+
+.iconic-cpu * {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+.iconic-cpu *.iconic-cpu-wafer {
+  fill: #4d4d4d;
+  stroke: #4d4d4d;
+}
+
+.iconic-credit-card * {
+  fill: #1B75BB;
+  stroke: #1B75BB;
+}
+
+.iconic-crop * {
+  fill: #1B75BB;
+  stroke: #1B75BB;
+}
+
+.iconic-dashboard * {
+  fill: #4d4d4d;
+  stroke: #4d4d4d;
+}
+.iconic-dashboard *.iconic-property-accent {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+.iconic-dashboard *.iconic-dashboard-needle {
+  fill: #DA3A35;
+  stroke: #DA3A35;
+}
+
+.iconic-data-transfer * .iconic-download * {
+  fill: #80B23C;
+  stroke: #80B23C;
+}
+.iconic-data-transfer * .iconic-upload * {
+  fill: #1B75BB;
+  stroke: #1B75BB;
+}
+
+.iconic-database .iconic-database-disc-top {
+  fill: #1e83d1;
+  stroke: #1e83d1;
+}
+.iconic-database .iconic-database-disc-middle {
+  fill: #1B75BB;
+  stroke: #1B75BB;
+}
+.iconic-database .iconic-database-disc-bottom {
+  fill: #1867a5;
+  stroke: #1867a5;
+}
+
+.iconic-delete * {
+  fill: #DA3A35;
+  stroke: #DA3A35;
+}
+
+.iconic-delta * {
+  fill: #4d4d4d;
+  stroke: #4d4d4d;
+}
+
+.iconic-dial * {
+  fill: #4d4d4d;
+  stroke: #4d4d4d;
+}
+.iconic-dial *.iconic-dial-notch {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+.iconic-dial *.iconic-dial-notch-7, .iconic-dial *.iconic-dial-notch-8, .iconic-dial *.iconic-dial-notch-9 {
+  fill: #DA3A35;
+  stroke: #DA3A35;
+}
+
+.iconic-dna *.iconic-dna-base {
+  fill: #80B23C;
+  stroke: #80B23C;
+}
+.iconic-dna *.iconic-dna-backbone {
+  fill: #1B75BB;
+  stroke: #1B75BB;
+}
+
+.iconic-document *.iconic-document-page {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+.iconic-document *.iconic-document-flap {
+  fill: #4d4d4d;
+  stroke: #4d4d4d;
+}
+
+.iconic-dollar * {
+  fill: #ab862a;
+  stroke: #ab862a;
+}
+
+.iconic-double-quote-left *,
+.iconic-double-quote-right * {
+  fill: #4d4d4d;
+  stroke: #4d4d4d;
+}
+
+.iconic-easel .iconic-easel-clamp {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+.iconic-easel .iconic-easel-canvas {
+  fill: #1B75BB;
+  stroke: #1B75BB;
+}
+.iconic-easel .iconic-easel-legs, .iconic-easel .iconic-easel-base {
+  fill: #98845d;
+  stroke: #98845d;
+}
+.iconic-easel .iconic-easel-legs-back {
+  fill: #c1b49a;
+  stroke: #c1b49a;
+}
+
+.iconic-eject * {
+  fill: #4d4d4d;
+  stroke: #4d4d4d;
+}
+
+.iconic-electric * {
+  fill: #fcb400;
+  stroke: #fcb400;
+}
+
+.iconic-elevator * {
+  fill: #4d4d4d;
+  stroke: #4d4d4d;
+}
+
+.iconic-ellipses * {
+  fill: #4d4d4d;
+  stroke: #4d4d4d;
+}
+
+.iconic-envelope * {
+  fill: #c1b49a;
+  stroke: #c1b49a;
+}
+
+.iconic-envelope-open * {
+  fill: #c1b49a;
+  stroke: #c1b49a;
+}
+.iconic-envelope-open *.iconic-property-accent {
+  fill: #e8e3d9;
+  stroke: #e8e3d9;
+}
+
+.iconic-euro * {
+  fill: #ab862a;
+  stroke: #ab862a;
+}
+
+.iconic-excerpt * {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+.iconic-excerpt *.iconic-property-accent {
+  fill: #DA3A35;
+  stroke: #DA3A35;
+}
+
+.iconic-external-link *.iconic-external-link-box {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+.iconic-external-link *.iconic-external-link-arrow {
+  fill: #1B75BB;
+  stroke: #1B75BB;
+}
+
+.iconic-eye *.iconic-eye-open-eyeball, .iconic-eye * .iconic-eye-closed-eyeball {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+.iconic-eye *.iconic-eye-closed-strike {
+  fill: #DA3A35;
+  stroke: #DA3A35;
+}
+.iconic-eye *.iconic-eye-open-pupil {
+  fill: #1B75BB;
+  stroke: #1B75BB;
+}
+
+.iconic-eyedropper * {
+  fill: #4d4d4d;
+  stroke: #4d4d4d;
+}
+.iconic-eyedropper *.iconic-eyedropper-fluid {
+  fill: #1B75BB;
+  stroke: #1B75BB;
+}
+
+.iconic-file * {
+  fill: #4d4d4d;
+  stroke: #4d4d4d;
+}
+.iconic-file *.iconic-file-page {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+.iconic-file *.iconic-file-flap {
+  fill: #4d4d4d;
+  stroke: #4d4d4d;
+}
+
+.iconic-fire * {
+  fill: #DA3A35;
+  stroke: #DA3A35;
+}
+.iconic-fire *.iconic-property-accent {
+  fill: #f16522;
+  stroke: #f16522;
+}
+
+.iconic-firefly * {
+  fill: #4d4d4d;
+  stroke: #4d4d4d;
+}
+.iconic-firefly *.iconic-firefly-wing {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+.iconic-firefly *.iconic-firefly-light-beam {
+  fill: #fcb400;
+  stroke: #fcb400;
+}
+
+.iconic-flag *.iconic-flag-back {
+  fill: #15598e;
+  stroke: #15598e;
+}
+.iconic-flag *.iconic-flag-front {
+  fill: #1B75BB;
+  stroke: #1B75BB;
+}
+
+.iconic-folder *.iconic-folder-top {
+  fill: #c1b49a;
+  stroke: #c1b49a;
+}
+.iconic-folder *.iconic-folder-bottom {
+  fill: #ae9d7a;
+  stroke: #ae9d7a;
+}
+
+.iconic-fork *.iconic-fork-line-trunk {
+  fill: #1B75BB;
+  stroke: #1B75BB;
+}
+.iconic-fork *.iconic-fork-point-trunk-start {
+  fill: #1B75BB;
+  stroke: #1B75BB;
+}
+.iconic-fork *.iconic-fork-point-trunk-end {
+  fill: #1B75BB;
+  stroke: #1B75BB;
+}
+.iconic-fork *.iconic-fork-line-fork {
+  fill: #80B23C;
+  stroke: #80B23C;
+}
+.iconic-fork *.iconic-fork-point-fork {
+  fill: #80B23C;
+  stroke: #80B23C;
+}
+
+.iconic-flash * {
+  fill: #fcb400;
+  stroke: #fcb400;
+}
+
+.iconic-fullscreen * .iconic-fullscreen-enter-line, .iconic-fullscreen * .iconic-fullscreen-enter-arrowhead {
+  fill: #80B23C;
+  stroke: #80B23C;
+}
+.iconic-fullscreen * .iconic-fullscreen-exit-line, .iconic-fullscreen * .iconic-fullscreen-exit-arrowhead {
+  fill: #DA3A35;
+  stroke: #DA3A35;
+}
+
+.iconic-funnel .iconic-funnel-rim {
+  fill: #a6a6a6;
+  stroke: #a6a6a6;
+}
+.iconic-funnel .iconic-funnel-body {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+
+.iconic-game-controller .iconic-game-controller-body {
+  fill: #4d4d4d;
+  stroke: #4d4d4d;
+}
+.iconic-game-controller .iconic-game-controller-analog-stick {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+
+.iconic-globe * {
+  fill: #80B23C;
+  stroke: #80B23C;
+}
+
+.iconic-graph * {
+  fill: #2A91A8;
+  stroke: #2A91A8;
+}
+.iconic-graph *.iconic-property-accent {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+
+.iconic-group *.iconic-group-item {
+  fill: #1B75BB;
+  stroke: #1B75BB;
+}
+
+.iconic-guides * {
+  fill: #4A46AA;
+  stroke: #4A46AA;
+}
+
+.iconic-hammer .iconic-hammer-handle {
+  fill: #98845d;
+  stroke: #98845d;
+}
+.iconic-hammer .iconic-hammer-head {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+
+.iconic-hand * {
+  fill: #4d4d4d;
+  stroke: #4d4d4d;
+}
+
+.iconic-hard-drive * {
+  fill: #4d4d4d;
+  stroke: #4d4d4d;
+}
+.iconic-hard-drive *.iconic-hard-drive-casing-top {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+
+.iconic-header * {
+  fill: #4d4d4d;
+  stroke: #4d4d4d;
+}
+
+.iconic-headphones * {
+  fill: #4d4d4d;
+  stroke: #4d4d4d;
+}
+.iconic-headphones *.iconic-headphones-connector {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+.iconic-headphones *.iconic-headphones-top {
+  fill: #f16522;
+  stroke: #f16522;
+}
+.iconic-headphones *.iconic-headphones-speaker-back {
+  fill: #f16522;
+  stroke: #f16522;
+}
+
+.iconic-heart * {
+  fill: #DA3A35;
+  stroke: #DA3A35;
+}
+
+.iconic-history .iconic-history-rim {
+  fill: #4d4d4d;
+  stroke: #4d4d4d;
+}
+.iconic-history .iconic-history-arrowhead {
+  fill: #4d4d4d;
+  stroke: #4d4d4d;
+}
+.iconic-history .iconic-history-clock-hands {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+
+.iconic-home *.iconic-home-roof {
+  fill: #a4916b;
+  stroke: #a4916b;
+}
+.iconic-home *.iconic-home-wall {
+  fill: #c1b49a;
+  stroke: #c1b49a;
+}
+
+.iconic-image-landscape *,
+.iconic-image-portrait * {
+  fill: #4d4d4d;
+  stroke: #4d4d4d;
+}
+.iconic-image-landscape *.iconic-property-accent,
+.iconic-image-portrait *.iconic-property-accent {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+.iconic-image-landscape *.iconic-image-landscape-sun,
+.iconic-image-portrait *.iconic-image-landscape-sun {
+  fill: #fcb400;
+  stroke: #fcb400;
+}
+
+.iconic-inbox * {
+  fill: #2A91A8;
+  stroke: #2A91A8;
+}
+
+.iconic-inkwell .iconic-inkwell-well {
+  fill: #4d4d4d;
+  stroke: #4d4d4d;
+}
+.iconic-inkwell .iconic-inkwell-feather-stem {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+.iconic-inkwell .iconic-inkwell-feather-feather-left, .iconic-inkwell .iconic-inkwell-feather-feather-right {
+  fill: #d9d9d9;
+  stroke: #d9d9d9;
+}
+
+.iconic-info * {
+  fill: #1B75BB;
+  stroke: #1B75BB;
+}
+
+.iconic-italic * {
+  fill: #4d4d4d;
+  stroke: #4d4d4d;
+}
+
+.iconic-key * {
+  fill: #ab862a;
+  stroke: #ab862a;
+}
+
+.iconic-layers * {
+  fill: #4d4d4d;
+  stroke: #4d4d4d;
+}
+.iconic-layers *.iconic-property-accent {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+
+.iconic-lightbulb *.iconic-lightbulb-coil {
+  fill: #fcb400;
+  stroke: #fcb400;
+}
+.iconic-lightbulb *.iconic-lightbulb-base {
+  fill: #4d4d4d;
+  stroke: #4d4d4d;
+}
+.iconic-lightbulb *.iconic-lightbulb-screw {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+
+.iconic-lightbulb-alt-on *.iconic-lightbulb-alt-on-bulb {
+  fill: #fcb400;
+  stroke: #fcb400;
+}
+.iconic-lightbulb-alt-on *.iconic-lightbulb-alt-on-base {
+  fill: #4d4d4d;
+  stroke: #4d4d4d;
+}
+.iconic-lightbulb-alt-on *.iconic-lightbulb-alt-on-screw {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+
+.iconic-lightbulb-alt-off *.iconic-lightbulb-alt-off-bulb {
+  fill: #4d4d4d;
+  stroke: #4d4d4d;
+}
+.iconic-lightbulb-alt-off *.iconic-lightbulb-alt-off-base {
+  fill: #4d4d4d;
+  stroke: #4d4d4d;
+}
+.iconic-lightbulb-alt-off *.iconic-lightbulb-alt-off-screw {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+.iconic-lightbulb-alt-off *.iconic-lightbulb-alt-off-strike {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+
+.iconic-lightning * {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+.iconic-lightning *.iconic-property-accent {
+  fill: #fcb400;
+  stroke: #fcb400;
+}
+
+.iconic-lightning-bolt * {
+  fill: #fcb400;
+  stroke: #fcb400;
+}
+
+.iconic-link * {
+  fill: #1B75BB;
+  stroke: #1B75BB;
+}
+
+.iconic-link-broken * {
+  fill: #82beed;
+  stroke: #82beed;
+}
+
+.iconic-list * {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+.iconic-list *.iconic-property-accent {
+  fill: #4d4d4d;
+  stroke: #4d4d4d;
+}
+
+.iconic-list-rich * {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+.iconic-list-rich *.iconic-list-rich-list-group-1.iconic-list-rich-block {
+  fill: #1B75BB;
+  stroke: #1B75BB;
+}
+.iconic-list-rich *.iconic-list-rich-list-group-2.iconic-list-rich-block {
+  fill: #80B23C;
+  stroke: #80B23C;
+}
+.iconic-list-rich *.iconic-list-rich-list-group-3.iconic-list-rich-block {
+  fill: #DA3A35;
+  stroke: #DA3A35;
+}
+
+.iconic-list-nested .iconic-list-nested-list-line {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+.iconic-list-nested .iconic-list-nested-list-dot {
+  fill: #4d4d4d;
+  stroke: #4d4d4d;
+}
+
+.iconic-location * {
+  fill: #f16522;
+  stroke: #f16522;
+}
+
+.iconic-lock *.iconic-lock-locked-body, .iconic-lock *.iconic-lock-unlocked-body {
+  fill: #15598e;
+  stroke: #15598e;
+}
+.iconic-lock *.iconic-lock-locked-body-main, .iconic-lock *.iconic-lock-unlocked-body-main {
+  fill: #1B75BB;
+  stroke: #1B75BB;
+}
+.iconic-lock *.iconic-lock-locked-loop, .iconic-lock *.iconic-lock-unlocked-loop {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+
+.iconic-loop-circular * {
+  fill: #4d4d4d;
+  stroke: #4d4d4d;
+}
+.iconic-loop-circular *.iconic-loop-circular-line-right, .iconic-loop-circular *.iconic-loop-circular-arrowhead-right {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+
+.iconic-loop-square * {
+  fill: #4d4d4d;
+  stroke: #4d4d4d;
+}
+.iconic-loop-square *.iconic-loop-square-line-bottom, .iconic-loop-square *.iconic-loop-square-arrowhead-bottom {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+
+.iconic-loop * {
+  fill: #4d4d4d;
+  stroke: #4d4d4d;
+}
+.iconic-loop *.iconic-loop-line-bottom, .iconic-loop *.iconic-loop-arrowhead-bottom {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+
+.iconic-loupe * {
+  fill: #4d4d4d;
+  stroke: #4d4d4d;
+}
+
+.iconic-magic-wand *.iconic-magic-wand-shaft {
+  fill: #4d4d4d;
+  stroke: #4d4d4d;
+}
+.iconic-magic-wand *.iconic-magic-wand-shaft-tip {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+.iconic-magic-wand *.iconic-magic-wand-ray-major {
+  fill: #fcb400;
+  stroke: #fcb400;
+}
+.iconic-magic-wand *.iconic-magic-wand-ray-minor {
+  fill: #ffc430;
+  stroke: #ffc430;
+}
+.iconic-magic-wand *.iconic-magic-wand-spark {
+  fill: #ab862a;
+  stroke: #ab862a;
+}
+
+.iconic-magnifying-glass *.iconic-magnifying-glass-handle {
+  fill: #c1b49a;
+  stroke: #c1b49a;
+}
+.iconic-magnifying-glass *.iconic-magnifying-glass-handle-connector {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+.iconic-magnifying-glass *.iconic-magnifying-glass-rim {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+.iconic-magnifying-glass *.iconic-magnifying-glass-reflection {
+  fill: #6cb3ea;
+  stroke: #6cb3ea;
+}
+
+.iconic-map-marker * {
+  fill: #2A91A8;
+  stroke: #2A91A8;
+}
+
+.iconic-map *.iconic-map-map-marker {
+  fill: #2A91A8;
+  stroke: #2A91A8;
+}
+.iconic-map *.iconic-map-street {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+
+.iconic-medal *.iconic-medal-medal {
+  fill: #ab862a;
+  stroke: #ab862a;
+}
+.iconic-medal *.iconic-medal-band {
+  fill: #1B75BB;
+  stroke: #1B75BB;
+}
+
+.iconic-media-play-circle * {
+  fill: #80B23C;
+  stroke: #80B23C;
+}
+
+.iconic-media-skip *.iconic-media-skip-backward *, .iconic-media-skip *.iconic-media-skip-forward * {
+  fill: #2A91A8;
+  stroke: #2A91A8;
+}
+
+.iconic-media-step *.iconic-media-step-backward *, .iconic-media-step *.iconic-media-step-forward * {
+  fill: #1B75BB;
+  stroke: #1B75BB;
+}
+
+.iconic-media * {
+  fill: #4d4d4d;
+  stroke: #4d4d4d;
+}
+.iconic-media *.iconic-media-play * {
+  fill: #80B23C;
+  stroke: #80B23C;
+}
+.iconic-media *.iconic-media-record * {
+  fill: #DA3A35;
+  stroke: #DA3A35;
+}
+
+.iconic-medical-cross * {
+  fill: #DA3A35;
+  stroke: #DA3A35;
+}
+
+.iconic-menu-selected *.iconic-menu-selected-checkmark {
+  fill: #80B23C;
+  stroke: #80B23C;
+}
+
+.iconic-microphone * {
+  fill: #4d4d4d;
+  stroke: #4d4d4d;
+}
+.iconic-microphone *.iconic-microphone-head {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+.iconic-microphone *.iconic-microphone-head-button {
+  fill: #80B23C;
+  stroke: #80B23C;
+}
+
+.iconic-monitor *.iconic-monitor-base {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+
+.iconic-moon * {
+  fill: #fcb400;
+  stroke: #fcb400;
+}
+
+.iconic-move * {
+  fill: #1B75BB;
+  stroke: #1B75BB;
+}
+
+.iconic-network * {
+  fill: #1B75BB;
+  stroke: #1B75BB;
+}
+
+.iconic-open-hardware * {
+  fill: #0099B0;
+  stroke: #0099B0;
+}
+
+.iconic-open-source * {
+  fill: #80B23C;
+  stroke: #80B23C;
+}
+
+.iconic-palette * {
+  fill: #c1b49a;
+  stroke: #c1b49a;
+}
+
+.iconic-peace * {
+  fill: #1B75BB;
+  stroke: #1B75BB;
+}
+
+.iconic-pen * {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+.iconic-pen *.iconic-property-accent {
+  fill: #4d4d4d;
+  stroke: #4d4d4d;
+}
+
+.iconic-pencil *.iconic-pencil-shaft {
+  fill: #fcb400;
+  stroke: #fcb400;
+}
+.iconic-pencil *.iconic-pencil-exposed-wood {
+  fill: #c1b49a;
+  stroke: #c1b49a;
+}
+.iconic-pencil *.iconic-pencil-eraser-border {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+.iconic-pencil *.iconic-pencil-eraser {
+  fill: #ec297b;
+  stroke: #ec297b;
+}
+
+.iconic-people *.iconic-people-person-body-left {
+  fill: #1B75BB;
+  stroke: #1B75BB;
+}
+.iconic-people *.iconic-people-person-head-left {
+  fill: #b7a88a;
+  stroke: #b7a88a;
+}
+.iconic-people *.iconic-people-person-body-center {
+  fill: #80B23C;
+  stroke: #80B23C;
+}
+.iconic-people *.iconic-people-person-head-center {
+  fill: #a4916b;
+  stroke: #a4916b;
+}
+.iconic-people *.iconic-people-person-body-right {
+  fill: #DA3A35;
+  stroke: #DA3A35;
+}
+.iconic-people *.iconic-people-person-head-right {
+  fill: #ae9d7a;
+  stroke: #ae9d7a;
+}
+
+.iconic-person *.iconic-person-head {
+  fill: #80B23C;
+  stroke: #80B23C;
+}
+.iconic-person *.iconic-person-body {
+  fill: #658c2f;
+  stroke: #658c2f;
+}
+.iconic-person *.iconic-person-male-head {
+  fill: #DA3A35;
+  stroke: #DA3A35;
+}
+.iconic-person *.iconic-person-male-body {
+  fill: #ba2722;
+  stroke: #ba2722;
+}
+.iconic-person *.iconic-person-female-head {
+  fill: #1B75BB;
+  stroke: #1B75BB;
+}
+.iconic-person *.iconic-person-female-body {
+  fill: #15598e;
+  stroke: #15598e;
+}
+
+.iconic-pie-chart *.iconic-pie-chart-slice-large {
+  fill: #80B23C;
+  stroke: #80B23C;
+}
+.iconic-pie-chart *.iconic-pie-chart-slice-medium {
+  fill: #2A91A8;
+  stroke: #2A91A8;
+}
+.iconic-pie-chart *.iconic-pie-chart-slice-small {
+  fill: #4A46AA;
+  stroke: #4A46AA;
+}
+
+.iconic-pill *.iconic-pill-cap-solid {
+  fill: #80B23C;
+  stroke: #80B23C;
+}
+.iconic-pill *.iconic-pill-cap-hollow {
+  fill: #2A91A8;
+  stroke: #2A91A8;
+}
+
+.iconic-pin * {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+.iconic-pin *.iconic-property-accent {
+  fill: #DA3A35;
+  stroke: #DA3A35;
+}
+
+.iconic-platform .iconic-platform-android * {
+  fill: #9dbf52;
+  stroke: #9dbf52;
+}
+.iconic-platform .iconic-platform-apple * {
+  fill: #656565;
+  stroke: #656565;
+}
+.iconic-platform .iconic-platform-linux * {
+  fill: #000000;
+  stroke: #000000;
+}
+.iconic-platform .iconic-platform-microsoft * {
+  fill: #65baf2;
+  stroke: #65baf2;
+}
+
+.iconic-plus * {
+  fill: #80B23C;
+  stroke: #80B23C;
+}
+
+.iconic-plus-thin * {
+  fill: #80B23C;
+  stroke: #80B23C;
+}
+
+.iconic-power-standby * {
+  fill: #2A91A8;
+  stroke: #2A91A8;
+}
+
+.iconic-print * {
+  fill: #4d4d4d;
+  stroke: #4d4d4d;
+}
+.iconic-print *.iconic-print-paper {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+
+.iconic-project *.iconic-project-task-1 {
+  fill: #80B23C;
+  stroke: #80B23C;
+}
+.iconic-project *.iconic-project-task-2 {
+  fill: #2A91A8;
+  stroke: #2A91A8;
+}
+.iconic-project *.iconic-project-task-3 {
+  fill: #1B75BB;
+  stroke: #1B75BB;
+}
+.iconic-project *.iconic-project-task-4 {
+  fill: #4A46AA;
+  stroke: #4A46AA;
+}
+
+.iconic-pulse * {
+  fill: #DA3A35;
+  stroke: #DA3A35;
+}
+
+.iconic-puzzle-piece * {
+  fill: #c1b49a;
+  stroke: #c1b49a;
+}
+
+.iconic-question-mark * {
+  fill: #1B75BB;
+  stroke: #1B75BB;
+}
+
+.iconic-radiation .iconic-radiation-center {
+  fill: #e3a200;
+  stroke: #e3a200;
+}
+.iconic-radiation .iconic-radiation-trefoil {
+  fill: #fcb400;
+  stroke: #fcb400;
+}
+
+.iconic-rainy * {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+.iconic-rainy *.iconic-property-accent {
+  fill: #82beed;
+  stroke: #82beed;
+}
+
+.iconic-random * {
+  fill: #4d4d4d;
+  stroke: #4d4d4d;
+}
+.iconic-random *.iconic-random-arrowhead-top, .iconic-random * .iconic-random-line-top {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+
+.iconic-ratio .iconic-ratio-border {
+  fill: #1B75BB;
+  stroke: #1B75BB;
+}
+.iconic-ratio .iconic-ratio-positive {
+  fill: #1B75BB;
+  stroke: #1B75BB;
+}
+
+.iconic-reload * {
+  fill: #2A91A8;
+  stroke: #2A91A8;
+}
+
+.iconic-rocket .iconic-rocket-body {
+  fill: #4d4d4d;
+  stroke: #4d4d4d;
+}
+.iconic-rocket .iconic-rocket-fin {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+.iconic-rocket .iconic-rocket-thruster {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+
+.iconic-route .iconic-route-path {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+.iconic-route .iconic-route-start-point {
+  fill: #DA3A35;
+  stroke: #DA3A35;
+}
+.iconic-route .iconic-route-end-point {
+  fill: #80B23C;
+  stroke: #80B23C;
+}
+
+.iconic-rss * {
+  fill: #f16522;
+  stroke: #f16522;
+}
+.iconic-rss *.iconic-rss-center {
+  fill: #f16522;
+  stroke: #f16522;
+}
+
+.iconic-rss-alt * {
+  fill: #f16522;
+  stroke: #f16522;
+}
+
+.iconic-scissors .iconic-scissors-handle {
+  fill: #f16522;
+  stroke: #f16522;
+}
+.iconic-scissors .iconic-scissors-blade-top {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+.iconic-scissors .iconic-scissors-blade-bottom {
+  fill: #999999;
+  stroke: #999999;
+}
+
+.iconic-screen-viewport *.iconic-screen-viewport-bound {
+  fill: #1B75BB;
+  stroke: #1B75BB;
+}
+
+.iconic-screenshot * {
+  fill: #1B75BB;
+  stroke: #1B75BB;
+}
+.iconic-screenshot .iconic-screenshot-center {
+  fill: #0e3d62;
+  stroke: #0e3d62;
+}
+
+.iconic-screwdriver * {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+.iconic-screwdriver *.iconic-screwdriver-handle {
+  fill: #DA3A35;
+  stroke: #DA3A35;
+}
+
+.iconic-script * {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+
+.iconic-server .iconic-server-rack {
+  fill: #4d4d4d;
+  stroke: #4d4d4d;
+}
+.iconic-server .iconic-server-chasis {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+.iconic-server .iconic-server-chasis-light {
+  fill: #80B23C;
+  stroke: #80B23C;
+}
+
+.iconic-settings * {
+  fill: #4d4d4d;
+  stroke: #4d4d4d;
+}
+.iconic-settings *.iconic-property-accent {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+
+.iconic-shape .iconic-container * {
+  fill: #4d4d4d;
+  stroke: #4d4d4d;
+}
+
+.iconic-share-boxed * {
+  fill: #1B75BB;
+  stroke: #1B75BB;
+}
+.iconic-share-boxed *.iconic-property-accent {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+
+.iconic-share-social * {
+  fill: #80B23C;
+  stroke: #80B23C;
+}
+.iconic-share-social *.iconic-share-social-circle {
+  fill: #1B75BB;
+  stroke: #1B75BB;
+}
+
+.iconic-shield * {
+  fill: #1B75BB;
+  stroke: #1B75BB;
+}
+.iconic-shield *.iconic-shield-shadow {
+  fill: #15598e;
+  stroke: #15598e;
+}
+
+.iconic-signal * .iconic-signal-bar-1 {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+.iconic-signal * .iconic-signal-bar-2 {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+.iconic-signal * .iconic-signal-bar-3 {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+.iconic-signal * .iconic-signal-bar-4 {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+.iconic-signal * .iconic-signal-bar-5 {
+  fill: #4d4d4d;
+  stroke: #4d4d4d;
+}
+
+.iconic-signpost * {
+  fill: #ae9d7a;
+  stroke: #ae9d7a;
+}
+.iconic-signpost *.iconic-signpost-sign-right {
+  fill: #98845d;
+  stroke: #98845d;
+}
+
+.iconic-social .iconic-social-dribbble * {
+  fill: #c32361;
+  stroke: #c32361;
+}
+.iconic-social .iconic-social-dropbox * {
+  fill: #137de0;
+  stroke: #137de0;
+}
+.iconic-social .iconic-social-facebook * {
+  fill: #3c569a;
+  stroke: #3c569a;
+}
+.iconic-social .iconic-social-flickr .iconic-social-flickr-circle-left {
+  fill: #0063db;
+  stroke: #0063db;
+}
+.iconic-social .iconic-social-flickr .iconic-social-flickr-circle-right {
+  fill: #ff0084;
+  stroke: #ff0084;
+}
+.iconic-social .iconic-social-github * {
+  fill: #333;
+  stroke: #333;
+}
+.iconic-social .iconic-social-instagram * {
+  fill: #211f20;
+  stroke: #211f20;
+}
+.iconic-social .iconic-social-linkedin * {
+  fill: #1984bf;
+  stroke: #1984bf;
+}
+.iconic-social .iconic-social-google-plus * {
+  fill: #df4a32;
+  stroke: #df4a32;
+}
+.iconic-social .iconic-social-pinterest * {
+  fill: #b02224;
+  stroke: #b02224;
+}
+.iconic-social .iconic-social-reddit * {
+  fill: #000;
+  stroke: #000;
+}
+.iconic-social .iconic-social-reddit .iconic-social-reddit-eye {
+  fill: #ff4700;
+  stroke: #ff4700;
+}
+.iconic-social .iconic-social-tumblr * {
+  fill: #34455e;
+  stroke: #34455e;
+}
+.iconic-social .iconic-social-twitter * {
+  fill: #00b4f3;
+  stroke: #00b4f3;
+}
+.iconic-social .iconic-social-vimeo * {
+  fill: #65b5ea;
+  stroke: #65b5ea;
+}
+.iconic-social .iconic-social-youtube .iconic-social-youtube-you {
+  fill: #393939;
+  stroke: #393939;
+}
+.iconic-social .iconic-social-youtube .iconic-social-youtube-tube {
+  fill: #b01a19;
+  stroke: #b01a19;
+}
+
+.iconic-sort-descending * {
+  fill: #4d4d4d;
+  stroke: #4d4d4d;
+}
+.iconic-sort-descending *.iconic-property-accent {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+.iconic-sort-descending *.iconic-sort-descending-sort-small {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+.iconic-sort-descending *.iconic-sort-descending-sort-medium {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+.iconic-sort-descending *.iconic-sort-descending-sort-large {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+
+.iconic-sort-ascending * {
+  fill: #4d4d4d;
+  stroke: #4d4d4d;
+}
+.iconic-sort-ascending *.iconic-property-accent {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+.iconic-sort-ascending *.iconic-sort-ascending-sort-small {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+.iconic-sort-ascending *.iconic-sort-ascending-sort-medium {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+.iconic-sort-ascending *.iconic-sort-ascending-sort-large {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+
+.iconic-spreadsheet * {
+  fill: #80B23C;
+  stroke: #80B23C;
+}
+.iconic-spreadsheet *.iconic-spreadsheet-row, .iconic-spreadsheet * .iconic-spreadsheet-column {
+  fill: #b0d480;
+  stroke: #b0d480;
+}
+
+.iconic-star * {
+  fill: #fcb400;
+  stroke: #fcb400;
+}
+
+.iconic-star-empty * {
+  fill: #fcb400;
+  stroke: #fcb400;
+}
+
+.iconic-sun * {
+  fill: #f16522;
+  stroke: #f16522;
+}
+.iconic-sun *.iconic-property-accent {
+  fill: #fcb400;
+  stroke: #fcb400;
+}
+
+.iconic-share * {
+  fill: #1B75BB;
+  stroke: #1B75BB;
+}
+
+.iconic-syringe .iconic-syringe-needle {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+.iconic-syringe .iconic-syringe-plunger {
+  fill: #4d4d4d;
+  stroke: #4d4d4d;
+}
+.iconic-syringe .iconic-syringe-tube {
+  fill: #DA3A35;
+  stroke: #DA3A35;
+}
+.iconic-syringe .iconic-syringe-tube-top {
+  fill: #4d4d4d;
+  stroke: #4d4d4d;
+}
+
+.iconic-tag *,
+.iconic-tags * {
+  fill: #2A91A8;
+  stroke: #2A91A8;
+}
+.iconic-tag *.iconic-property-accent,
+.iconic-tags *.iconic-property-accent {
+  fill: #89d1e2;
+  stroke: #89d1e2;
+}
+
+.iconic-target *.iconic-target-center {
+  fill: #DA3A35;
+  stroke: #DA3A35;
+}
+.iconic-target *.iconic-target-ring {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+
+.iconic-task *.iconic-task-check {
+  fill: #80B23C;
+  stroke: #80B23C;
+}
+.iconic-task *.iconic-task-check-box {
+  fill: #658c2f;
+  stroke: #658c2f;
+}
+
+.iconic-thermometer *.iconic-thermometer-tick {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+.iconic-thermometer *.iconic-thermometer-shaft, .iconic-thermometer * .iconic-thermometer-well {
+  fill: #DA3A35;
+  stroke: #DA3A35;
+}
+
+.iconic-thumb-up * {
+  fill: #80B23C;
+  stroke: #80B23C;
+}
+.iconic-thumb-up *.iconic-property-accent {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+
+.iconic-thumb-down * {
+  fill: #DA3A35;
+  stroke: #DA3A35;
+}
+.iconic-thumb-down *.iconic-property-accent {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+
+.iconic-tiara * {
+  fill: #ab862a;
+  stroke: #ab862a;
+}
+
+.iconic-timer *.iconic-timer-needle {
+  fill: #DA3A35;
+  stroke: #DA3A35;
+}
+
+.iconic-tint * {
+  fill: #4A46AA;
+  stroke: #4A46AA;
+}
+
+.iconic-tools * {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+.iconic-tools *.iconic-tools-screwdriver-handle {
+  fill: #DA3A35;
+  stroke: #DA3A35;
+}
+.iconic-tools *.iconic-tools-hammer-handle {
+  fill: #98845d;
+  stroke: #98845d;
+}
+
+.iconic-transfer *.iconic-property-accent {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+
+.iconic-ungroup *.iconic-ungroup-item {
+  fill: #1B75BB;
+  stroke: #1B75BB;
+}
+
+.iconic-vertical-align *.iconic-vertical-align-top-alignment-line,
+.iconic-vertical-align * .iconic-vertical-align-center-alignment-line,
+.iconic-vertical-align * .iconic-vertical-align-bottom-alignment-line {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+.iconic-vertical-align *.iconic-vertical-align-top-element-1,
+.iconic-vertical-align * .iconic-vertical-align-center-element-1,
+.iconic-vertical-align * .iconic-vertical-align-bottom-element-1 {
+  fill: #80B23C;
+  stroke: #80B23C;
+}
+.iconic-vertical-align *.iconic-vertical-align-top-element-2,
+.iconic-vertical-align * .iconic-vertical-align-center-element-2,
+.iconic-vertical-align * .iconic-vertical-align-bottom-element-2 {
+  fill: #4A46AA;
+  stroke: #4A46AA;
+}
+.iconic-vertical-align *.iconic-vertical-align-top-element-3,
+.iconic-vertical-align * .iconic-vertical-align-center-element-3,
+.iconic-vertical-align * .iconic-vertical-align-bottom-element-3 {
+  fill: #2A91A8;
+  stroke: #2A91A8;
+}
+
+.iconic-video *.iconic-video-lens {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+
+.iconic-volume *.iconic-volume-off-mute {
+  fill: #DA3A35;
+  stroke: #DA3A35;
+}
+.iconic-volume *.iconic-volume-low-wave {
+  fill: #a5ce6d;
+  stroke: #a5ce6d;
+}
+.iconic-volume *.iconic-volume-medium-wave {
+  fill: #94c552;
+  stroke: #94c552;
+}
+.iconic-volume *.iconic-volume-high-wave {
+  fill: #80B23C;
+  stroke: #80B23C;
+}
+
+.iconic-warning * {
+  fill: #f16522;
+  stroke: #f16522;
+}
+
+.iconic-wifi * {
+  fill: #4d4d4d;
+  stroke: #4d4d4d;
+}
+.iconic-wifi *.iconic-wifi-wave-inner {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+.iconic-wifi *.iconic-wifi-wave-middle {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+.iconic-wifi *.iconic-wifi-wave-outer {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+
+.iconic-x * {
+  fill: #DA3A35;
+  stroke: #DA3A35;
+}
+
+.iconic-x-thin * {
+  fill: #DA3A35;
+  stroke: #DA3A35;
+}
+
+.iconic-yen * {
+  fill: #ab862a;
+  stroke: #ab862a;
+}
+
+.iconic-zoom-in *.iconic-zoom-in-handle {
+  fill: #c1b49a;
+  stroke: #c1b49a;
+}
+.iconic-zoom-in *.iconic-zoom-in-handle-connector {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+.iconic-zoom-in *.iconic-zoom-in-rim {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+.iconic-zoom-in *.iconic-zoom-in-plus {
+  fill: #1B75BB;
+  stroke: #1B75BB;
+}
+
+.iconic-zoom-out *.iconic-zoom-out-handle {
+  fill: #c1b49a;
+  stroke: #c1b49a;
+}
+.iconic-zoom-out *.iconic-zoom-out-handle-connector {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+.iconic-zoom-out *.iconic-zoom-out-rim {
+  fill: #b3b3b3;
+  stroke: #b3b3b3;
+}
+.iconic-zoom-out *.iconic-zoom-out-minus {
+  fill: #DA3A35;
+  stroke: #DA3A35;
+}
+
+/*# sourceMappingURL=bright.css.map */

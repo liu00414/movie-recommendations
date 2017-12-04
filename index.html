@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Movie Recommendations</title>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+    <main>
+        <header class="mid inline">
+            <h1>Movie Recommendation</h1>
+            <div class="back-button inline"><img id="back-button" data-src="./img/caret.svg" class="iconic iconic-md" data-direction="left" alt="Back Button" title="Back" /></div>
+            <input type="text" id="search-input" placeholder="search" />
+            <div class="search-button inline"><img id="search-button" class="iconic iconic-md" data-src="./img/magnifying-glass.svg" alt="Search" title="Search" /></div>
+
+        </header>
+
+        <div class="page" id="search-results">
+            <section class="title"></section>
+            <section class="content search-results-content flex-container"></section>
+        </div>
+
+        <div class="page active" id="recommend-results">
+            <section class="title"></section>
+            <section class="content recommend-results-content flex-container"></section>
+        </div>
+    </main>
+
+    <div class="loading not">
+        <img class="iconic" data-src="./img/loop-circular.svg" title="loop circular" />
+    </div>
+
+    <div class="attribution">
+        <img src="./img/powered-by-square-green.svg" alt="The Movie DB" />
+    </div>
+    <script src="./js/iconic.min.js"></script>
+    <script src="./js/key.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
