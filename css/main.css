@@ -40,13 +40,13 @@ body {
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     width:33em;
-    height: 20em;
+    height: auto;
     margin: 1em auto;
     position: relative;
 }
 .imgcontainer {
     float: left;
-    width: 42%;
+    width: 14em;
     overflow: hidden;
     height: 20em;
     margin-right: 1em;
