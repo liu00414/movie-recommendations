@@ -91,6 +91,8 @@ const app = {
 
         data.results.forEach((movie) => {
             let resultElement = document.createElement('div');
+            let imgcontainer = document.createElement('div');//
+            
             resultElement.setAttribute('id', movie.id);
             let img = document.createElement('img'); //Get image
             let pTitle = document.createElement('p');
@@ -98,14 +100,19 @@ const app = {
             let pRating = document.createElement('p'); //Get average rating
             let pOverview = document.createElement('p'); //Get Overview describtion
             pTitle.textContent = movie.title;
+            pTitle.className = 'movietitle';
             pReleaseDate.textContent = ''.concat('Release Date: ', movie.release_date);
             pRating.textContent = ''.concat('Average Rating: ', movie.vote_average);
             if (movie.poster_path != null) {
                 img.src = ''.concat(app.baseImageURL, 'w500', movie.poster_path);
-                resultElement.appendChild(img);
+                imgcontainer.appendChild(img);//
+                imgcontainer.className='imgcontainer';
+                resultElement.appendChild(imgcontainer);//
             };
-
-            pOverview.textContent = ''.concat('Overview: ', movie.overview);
+            if(movie.overview.length>250){
+                pOverview.textContent = ''.concat('Overview: ', movie.overview.substr(0,250),'......')
+            }else{
+            pOverview.textContent = ''.concat('Overview: ', movie.overview)};
             console.log(img.src);
 
             resultElement.appendChild(pTitle);
@@ -115,7 +122,7 @@ const app = {
             df.appendChild(resultElement);
         });
         resultContent.appendChild(df);
-        let props = document.querySelectorAll('.search-results-content div');
+        let props = document.querySelectorAll('.search-results-content>div');
 
         app.makeMovieElement(props);
     },
@@ -158,20 +165,28 @@ const app = {
 
         data.results.forEach((movie) => {
             let resultElement = document.createElement('div');
+            let imgcontainer = document.createElement('div');//add
+            
             let img = document.createElement('img'); //Get image
             let pTitle = document.createElement('p');
             let pReleaseDate = document.createElement('p'); //Get release date
             let pRating = document.createElement('p'); //Get average rating
             let pOverview = document.createElement('p'); //Get Overview describtion
             pTitle.textContent = movie.title;
+            pTitle.className = 'movietitle';
             pReleaseDate.textContent = ''.concat('Release Date: ', movie.release_date);
             pRating.textContent = ''.concat('Average Rating: ', movie.vote_average);
 
             if (movie.poster_path != null) {
                 img.src = ''.concat(app.baseImageURL, 'w500', movie.poster_path);
-                resultElement.appendChild(img);
+                imgcontainer.appendChild(img);//change
+                resultElement.appendChild(imgcontainer);//add
+                imgcontainer.className='imgcontainer';
             };
-            pOverview.textContent = ''.concat('Overview: ', movie.overview);
+            if(movie.overview.length>250){
+                pOverview.textContent = ''.concat('Overview: ', movie.overview.substr(0,250),'......')
+            }else{
+            pOverview.textContent = ''.concat('Overview: ', movie.overview)};
             console.log(img.src);
 
             resultElement.appendChild(pTitle);
@@ -181,7 +196,7 @@ const app = {
             df.appendChild(resultElement);
         });
         resultContent.appendChild(df);
-        let props = document.querySelectorAll('.recommend-results-content div');
+        let props = document.querySelectorAll('.recommend-results-content>div');
 
         app.makeRecommendElement(props);
     },
