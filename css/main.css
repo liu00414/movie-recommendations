@@ -35,6 +35,9 @@ h1{
     margin-bottom: 1rem;
     font-family: 'Open Sans', sans-serif;
 }
+h2{
+    font-size: 1.1rem;
+}
 .page {
     margin-top:6rem;
     display: none;
@@ -48,6 +51,7 @@ Navigation
 
 .back-button {
     display: none;
+    margin-left: -3rem;
 }
 
 .active {
@@ -94,9 +98,9 @@ SEARCH BAR
     stroke:#3a8c68;
 } 
 #search-input {
-    width: 75%;
+    width: 78%;
     height: 3rem;
-    font-size: 1rem;
+    font-size: 0.8rem;
     border: 1px solid #929292;
     text-align: center;
 }
@@ -197,6 +201,11 @@ LOADING
     .attribution{
         margin-top: 35%;
     }
+    h2{
+    font-size: 1.3rem;
+}
+    #search-input {
+    font-size: 1rem;
 }
 @media screen and (min-width:1200px){
     

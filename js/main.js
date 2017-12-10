@@ -101,6 +101,7 @@ const app = {
         let resultContent = document.querySelector('.search-results-content')
         let searchMessage = document.createElement('h2');
         let pageTitle = document.querySelector('#search-results>.title');
+        if(pageTitle.hasChildNodes()){pageTitle.removeChild(pageTitle.lastChild);}
         searchMessage.textContent='Results based on keywords " '+app.keyword+' ".';
         pageTitle.appendChild(searchMessage);
         console.log(resultContent);
@@ -186,6 +187,7 @@ const app = {
         }
         let searchMessage = document.createElement('h2');
         let pageTitle = document.querySelector('#recommend-results>.title');
+        if(pageTitle.hasChildNodes()){pageTitle.removeChild(pageTitle.lastChild);}
         searchMessage.textContent='Recommendations based on movie " '+app.title+' ".';
         pageTitle.appendChild(searchMessage);
 
