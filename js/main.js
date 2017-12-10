@@ -59,7 +59,7 @@ const app = {
         }
     },
     navBack: function (ev) {
-        
+        window.location.reload(true);
     },
     runSearch: function (keyword) {
         /**********fetch list of movie**********/
