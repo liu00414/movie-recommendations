@@ -21,6 +21,13 @@ const app = {
         /**********Add event listeners**********/
         document.querySelector('.search-button').addEventListener('click', app.getConfig);
         document.querySelector('.back-button').addEventListener('click', app.navBack);
+        document.getElementById('search-input').addEventListener('keypress', function(ev){
+            event.preventDefault;
+            console.log(ev);
+            if(event.keyCode==13){
+                app.getConfig();
+            }
+        });
 
     },
     getConfig: function () {
@@ -31,6 +38,10 @@ const app = {
         });
         app.keyword = document.getElementById('search-input').value;
         console.log(app.keyword);
+        if(app.keyword==''){
+            alert('Please input keywords.');
+            
+        }else{
         fetch(req)
             .then((result) => {
                 return result.json();
@@ -45,6 +56,7 @@ const app = {
             .catch(function (err) {
                 alert(err);
             });
+        }
     },
     navBack: function (ev) {
         
@@ -87,6 +99,10 @@ const app = {
     displayMovies: function (data) {
         let df = new DocumentFragment();
         let resultContent = document.querySelector('.search-results-content')
+        let searchMessage = document.createElement('h2');
+        let pageTitle = document.querySelector('#search-results>.title');
+        searchMessage.textContent='Results based on keywords " '+app.keyword+' ".';
+        pageTitle.appendChild(searchMessage);
         console.log(resultContent);
 
         data.results.forEach((movie) => {
@@ -125,6 +141,10 @@ const app = {
         let props = document.querySelectorAll('.search-results-content>div');
 
         app.makeMovieElement(props);
+        //change search bar style
+        document.querySelector('.search').classList.add('search-top');
+        console.log("TTT", document.querySelector('.search').classList)
+        document.querySelector('h1').style.display='none';
     },
     makeMovieElement: function (props) {
         console.log(props);
@@ -137,8 +157,10 @@ const app = {
     },
     fetchRecommendations: function (ev) {
         let movieId = ev.target.getAttribute('id');
+        app.title = ev.target.children[1].textContent;
         console.log(ev.target);
         console.log(movieId);
+        console.log(app.title);
 
         /**********fetch list of recommended movie**********/
         let url = ''.concat(app.baseURL, 'movie/', movieId, '/recommendations?api_key=', APIKEY);
@@ -162,6 +184,10 @@ const app = {
         while (resultContent.hasChildNodes()) {
             resultContent.removeChild(resultContent.lastChild);
         }
+        let searchMessage = document.createElement('h2');
+        let pageTitle = document.querySelector('#recommend-results>.title');
+        searchMessage.textContent='Recommendations based on movie " '+app.title+' ".';
+        pageTitle.appendChild(searchMessage);
 
         data.results.forEach((movie) => {
             let resultElement = document.createElement('div');
@@ -183,8 +209,8 @@ const app = {
                 resultElement.appendChild(imgcontainer);//add
                 imgcontainer.className='imgcontainer';
             };
-            if(movie.overview.length>250){
-                pOverview.textContent = ''.concat('Overview: ', movie.overview.substr(0,250),'......')
+            if(movie.overview.length>180){
+                pOverview.textContent = ''.concat('Overview: ', movie.overview.substr(0,180),'......')
             }else{
             pOverview.textContent = ''.concat('Overview: ', movie.overview)};
             console.log(img.src);
