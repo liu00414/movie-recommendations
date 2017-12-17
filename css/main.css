@@ -1,19 +1,24 @@
-/****************
+    /****************
 DEFAULTS
 ********************/
-*{
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     color: #555;
 }
-body{
-        background-color: #f5f5f5;
-    }
-html{
+
+body {
+    background-color: #f5f5f5;
+    
+}
+
+html {
     font-size: 16px;
-    font-family: sans-serif;
+    font-family: 'Open Sans', sans-serif;
     line-height: 1.5;
+    
 }
 
 .attribution {
@@ -27,20 +32,25 @@ html{
     display: inline;
     margin: 1rem;
 }
-h1{
+
+h1 {
     font-size: 2.5rem;
     padding: 6rem 0 5rem 0;
     color: white;
     background: #081c25;
     margin-bottom: 1rem;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Quattrocento', serif;
 }
-h2{
+
+h2 {
     font-size: 1.1rem;
+    font-family: 'Quattrocento', serif;
 }
+
 .page {
-    margin-top:6rem;
+    margin-top: 6rem;
     display: none;
+    
 }
 
 
@@ -56,16 +66,18 @@ Navigation
 
 .active {
     display: block;
+    
 }
 
-.search-button, .active-back-button {
+.search-button,
+.active-back-button {
     display: inline-block;
     vertical-align: middle;
 }
-.search-button{
+
+.search-button {
     margin-left: -3rem;
 }
-
 
 
 /****************
@@ -75,28 +87,34 @@ SEARCH BAR
 .search {
     height: 3rem;
     display: inline-block;
-    transition: 1.2s;
+    transition: 0.8s;
     text-align: center;
     width: 100%;
 }
 
-#search-button, #back-button {
+#search-button,
+#back-button {
     height: 2rem;
     width: 2rem;
     cursor: pointer;
 }
-.iconic-property-stroke, .iconic-property-fill{
-    fill:#25b575;
-    stroke:#25b575;
+
+.iconic-property-stroke,
+.iconic-property-fill {
+    fill: #25b575;
+    stroke: #25b575;
 }
-.iconic:hover .iconic-property-stroke{
-    fill:#3a8c68;
-    stroke:#3a8c68;
-} 
-.iconic:hover .iconic-property-fill{
-    fill:#3a8c68;
-    stroke:#3a8c68;
-} 
+
+.iconic:hover .iconic-property-stroke {
+    fill: #3a8c68;
+    stroke: #3a8c68;
+}
+
+.iconic:hover .iconic-property-fill {
+    fill: #3a8c68;
+    stroke: #3a8c68;
+}
+
 #search-input {
     width: 78%;
     height: 3rem;
@@ -104,9 +122,10 @@ SEARCH BAR
     border: 1px solid #929292;
     text-align: center;
 }
-#search-input:focus{
-    outline: none;
-    border: 1.5px solid #081c25;
+
+#search-input:focus {
+    outline-color: #c9efde;
+    border: 1px solid #25b575;
 }
 
 .search-top {
@@ -119,9 +138,8 @@ SEARCH BAR
     background-color: white;
     margin: 0;
     padding-top: 1rem;
-    box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.2);
-     background-color: #081c25;
-    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #081c25;
 }
 
 
@@ -134,7 +152,6 @@ SEARCH RESULTS
     flex-wrap: wrap;
 }
 
-
 .card {
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
     width: 28rem;
@@ -143,10 +160,22 @@ SEARCH RESULTS
     position: relative;
     background-color: white;
     transition: 0.8s;
+    transform: scale(0); 
 }
-.card:hover{
+
+.card-in{
+    transform: scale(1);
+}
+card-out{
+    transform: scale(0);
+}
+.pointer {cursor: pointer;
+}
+
+.card:hover {
     box-shadow: 0 6px 25px 0 rgba(0, 0, 0, 0.5);
 }
+
 .imgcontainer {
     float: left;
     width: 12.5rem;
@@ -161,12 +190,13 @@ SEARCH RESULTS
     height: 17.5rem;
     margin: 0 1rem 0 0;
     pointer-events: none;
+    font-size: 0.8rem;
 }
 
 .card>p {
     pointer-events: none;
     font-size: 0.8rem;
-    line-height: 1rem;
+    line-height: 1.2rem;
 }
 
 .card>p:last-child {
@@ -175,11 +205,12 @@ SEARCH RESULTS
 }
 
 .card .movietitle {
-    color: black;
+    color: #505050;
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 700;
     line-height: 1.5rem;
     margin: 1rem 0;
+    font-family: 'Quattrocento', serif;
 }
 
 
@@ -189,6 +220,29 @@ RECOMMANDATIONS
 
 
 /****************
+PAGINATION
+********************/
+
+.pagination {
+    margin: 1rem auto;
+    text-align: center;
+}
+.pagination button {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #26b575;
+    color: white;
+    margin: 1rem;
+    cursor: pointer;
+}
+.pagination input{
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+    width: 7rem;
+    
+}
+
+/****************
 LOADING
 ********************/
 
@@ -196,26 +250,32 @@ LOADING
     display: none;
 }
 
-
-@media screen and (min-width:850px){
-    .attribution{
+@media screen and (min-width:850px) {
+    .attribution {
         margin-top: 35%;
     }
-    h2{
-    font-size: 1.3rem;
-}
+    h2 {
+        font-size: 1.3rem;
+    }
     #search-input {
-    font-size: 1rem;
-}
-@media screen and (min-width:1200px){
-    
-    .page{
-        margin: 6rem 11rem;
+        width: 50%;
+        font-size: 1rem;
+        transition: 1.2s;
     }
-    #search-input{
-        width: 70%;
+    #search-input:focus {
+        width: 78%;
     }
-    .attribution{
-        margin-top: 25%;
+    @media screen and (min-width:1200px) {
+        .page {
+            margin: 6rem 11rem;
+        }
+        #search-input {
+            width: 50%;
+        }
+        #search-input:focus {
+            width: 70%;
+        }
+        .attribution {
+            margin-top: 15%;
+        }
     }
-}

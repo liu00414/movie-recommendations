@@ -6,7 +6,7 @@
     <title>Movie Recommendations</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="./css/main.css" />
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Quattrocento:400,700" rel="stylesheet">
 </head>
 
 <body>
@@ -16,22 +16,31 @@
             <div class="back-button"><img id="back-button" data-src="./img/caret.svg" class="iconic iconic-md" data-direction="left" alt="Back Button" title="Back" /></div>
             <input type="text" id="search-input" placeholder="Search for movies by keywords ..." />
             <div class="search-button"><img id="search-button" class="iconic iconic-md" data-src="./img/magnifying-glass.svg" alt="Search" title="Search" /></div>
+            
         </header>
 
         <div class="page" id="search-results">
             <section class="title"></section>
             <section class="content search-results-content flex-container"></section>
+            <div>
+                <div class="pagination">
+                
+                </div>
+            </div>
         </div>
 
         <div class="page" id="recommend-results">
             <section class="title"></section>
             <section class="content recommend-results-content flex-container"></section>
         </div>
+        
     </main>
 
+<!--
     <div class="loading not">
         <img class="iconic" data-src="./img/loop-circular.svg" title="loop circular" />
     </div>
+-->
 
     <div class="attribution">
         <img src="https://www.themoviedb.org/assets/static_cache/27b65cb40d26f78354a4ac5abf87b2be/images/v4/logos/powered-by-rectangle-green.svg" alt="The Movie DB" />
